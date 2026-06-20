@@ -176,18 +176,22 @@ pm2 save
 
 ## 五、日常更新流程
 
+详细配置步骤见 [GitHub 同步与自动部署指南](github-sync-setup.md)。
+
+**自动更新（推荐）**：本地 push 代码 → GitHub Webhook → 服务器自动 git pull + 构建 + 重启。
+
+**手动更新（备用）**：
+
 ```bash
-# 1. 上传/拉取新代码到 /www/wwwroot/approval/
+cd /www/wwwroot/approval
+git pull origin main              # 拉取最新代码
 
-# 2. 重新构建前端
-cd /www/wwwroot/approval/client
-npm run build
+cd client
+npm run build                     # 重新构建前端
 
-# 3. 重启后端
-pm2 restart approval-server
+pm2 restart approval-server       # 重启后端
 
-# 4. 重载 Nginx（如果改了 Nginx 配置才需要）
-nginx -s reload
+# nginx -s reload                 # 仅改过 Nginx 配置才需要
 ```
 
 ---

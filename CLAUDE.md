@@ -18,6 +18,8 @@
 | [docs/api-design.md](docs/api-design.md) | API 接口设计文档 |
 | [docs/database-design.md](docs/database-design.md) | 数据库设计文档 |
 | [docs/implementation-plan.md](docs/implementation-plan.md) | 分步实现计划 |
+| [docs/deployment-guide.md](docs/deployment-guide.md) | 宝塔面板部署指南 |
+| [docs/github-sync-setup.md](docs/github-sync-setup.md) | GitHub 同步与自动部署配置 |
 
 ## 工作约定
 
