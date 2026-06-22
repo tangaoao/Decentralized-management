@@ -22,3 +22,6 @@ Thumbs.db
 # Archives & data files (large binaries)
 *.7z
 *.xlsx
+
+# Server runtime data (database, uploads, etc.)
+server/data/
